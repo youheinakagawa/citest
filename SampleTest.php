@@ -2,7 +2,7 @@
 require_once('./Sample.php');
 class SampleTest extends PHPUnit_Framework_TestCase
 {
-    public function testƒnƒ[ƒ[ƒ‹ƒh()
+    public function testãƒãƒ­ãƒ¼ãƒ¯ãƒ¼ãƒ«ãƒ‰()
     {
         $Sample = new Sample();
         $this->assertEquals($Sample->helloWorld(), 'hello world!');
