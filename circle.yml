@@ -1,3 +1,15 @@
+machine:
+  php:
+    version: 5.6.5
+dependencies:
+  pre:
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar require facebook/webdriver
+    - java -jar selenium-server-standalone-#.jar
+  post:
+    - cp ~/MY-PROJECT/MY-SITE /etc/apache2/sites-available
+    - a2ensite MY-SITE
+    - sudo service apache2 restart
 test:
   override:
     - phpunit SampleTest
