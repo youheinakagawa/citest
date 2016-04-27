@@ -2,10 +2,11 @@
   "name": "youheinakagawa/citest",
   "description": "citest",
   "require": {
+    "facebook/webdriver": "dev-master",
+    "facebook/php-sdk-v4": "^5.0",
+    "phpunit/phpunit": "^5.3"
   },
   "require-dev": {
-    "facebook/webdriver": "dev-master",
-    "facebook/php-sdk-v4": "^5.0"
   },
   "authors": [
     {
