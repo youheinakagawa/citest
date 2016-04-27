@@ -4,6 +4,12 @@ machine:
 dependencies:
   pre:
   post:
+    # install chromedriver
+    - wget https://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip
+    - unzip chromedriver_linux64.zip
+    # run chromedriver
+    - ./chromedriver:
+        background: true
     - cp ~/citest/MY-SITE /etc/apache2/sites-available
     - a2ensite MY-SITE
     - sudo service apache2 restart
