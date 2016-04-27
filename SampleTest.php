@@ -2,13 +2,6 @@
 require_once 'vendor/autoload.php';
 require_once('./Sample.php');
 
-use Facebook\WebDriver;
-use Facebook\WebDriver\WebDriverExpectedCondition;
-use Facebook\WebDriver\WebDriverBy;
-use Facebook\WebDriver\Remote;
-use Facebook\WebDriver\Remote\RemoteWebDriver;
-use Facebook\WebDriver\Remote\DesiredCapabilities;
-
 
 class SampleTest extends PHPUnit_Framework_TestCase
 {
@@ -39,7 +32,7 @@ class SampleTest extends PHPUnit_Framework_TestCase
         $driver = RemoteWebDriver::create($host, DesiredCapabilities::chrome());
 
         // //テストするサイトに移動
-        $driver->get('http://localhost/sample-page.php');
+        $driver->get('http://localhost:8080/sample-page.php');
 
         //最後の要素が読み込まれるまで待つ(sec,millisec)
         //とにかく待つならsleep(3)とかでも可？（未確認）
