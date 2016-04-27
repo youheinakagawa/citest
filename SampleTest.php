@@ -1,4 +1,5 @@
 <?php
+echo phpinfo();
 require_once 'vendor/autoload.php';
 require_once('./Sample.php');
 
