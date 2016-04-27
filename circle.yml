@@ -6,7 +6,7 @@ dependencies:
     - curl -sS https://getcomposer.org/installer | php
     - php composer.phar require facebook/webdriver
   post:
-    - cp ~/MY-PROJECT/MY-SITE /etc/apache2/sites-available
+    - cp ~/citest/MY-SITE /etc/apache2/sites-available
     - a2ensite MY-SITE
     - sudo service apache2 restart
 test:
