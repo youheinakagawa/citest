@@ -1,0 +1,17 @@
+{
+  "name": "youheinakagawa/citest",
+  "description": "citest",
+  "require": {
+    "facebook/webdriver": "^1.0",
+    "facebook/php-sdk-v4": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "authors": [
+    {
+    "name": "Youhei Nakagawa",
+    "email": "youhei.nakagawa@gmail.com"
+  }
+  ]
+}
