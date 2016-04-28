@@ -32,7 +32,7 @@ class SampleTest extends PHPUnit_Framework_TestCase
         $driver = RemoteWebDriver::create($host, DesiredCapabilities::chrome());
 
         // //テストするサイトに移動
-        $driver->get('http://localhost:8080/sample-page.php');
+        $driver->get('http://citest.youhei.local/sample-page.php');
 
         //最後の要素が読み込まれるまで待つ(sec,millisec)
         //とにかく待つならsleep(3)とかでも可？（未確認）

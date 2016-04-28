@@ -1,6 +1,10 @@
 machine:
   php:
     version: 5.6.5
+  hosts:
+    citest.youhei.local 127.0.0.1
+  timezone:
+    Asia/Tokyo
 dependencies:
   override:
     - composer install --prefer-source --no-interaction --no-dev
@@ -15,7 +19,7 @@ dependencies:
     # run chromedriver
     - ./chromedriver:
         background: true
-    - cp ~/citest/MY-SITE /etc/apache2/sites-available
+    - cp ~/$CIRCLE_PROJECT_REPONAME/MY-SITE /etc/apache2/sites-available
     - a2ensite MY-SITE
     - sudo service apache2 restart
 test:
